@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const CreateList = (probs) => {
     const [todos, setTodos] = useState([{}])
-    const [base, setBase] = useState()
+    const [text, setText] = useState("")
     return(
         <article>
             <form href="/todo" onSubmit={(event) => {
@@ -13,10 +13,11 @@ const CreateList = (probs) => {
                     todo: todos
                 };
                 probs.getData(detail_info);
-                setTodos("")
+                setText("")
             }}>
-                <input type="text" name="todos" placeholder="할 일" onChange={(event) => {
+                <input type="text" name="todos" placeholder="할 일" value={text} onChange={(event) => {
                     setTodos(event.target.value);
+                    setText(event.target.value)
                 }}/>
                 <button type="submit">작성</button>
             </form>

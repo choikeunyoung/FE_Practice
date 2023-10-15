@@ -13,13 +13,13 @@ const TodoList = () => {
         setListTodos(setting_list);
         setNextId(nextId + 1);
     }
-    console.log(nextId)
+
     return(
         <article>
             <section style={{border: "1px solid black",}}>
                 <h1>Todo List</h1>
                 <hr />
-                    <ShowList showlist={lis_todos} />
+                <ShowList showlist={lis_todos} />
                 <CreateList getData={todo_func} nextId={nextId}/>
             </section>  
         </article>
