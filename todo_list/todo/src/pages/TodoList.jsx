@@ -2,6 +2,7 @@ import React from "react";
 import CreateList from "../components/CreateList";
 import ShowList from "../components/ShowList";
 import { useState } from "react";
+import styles from "../styles/todo.module.css"
 
 const TodoList = () => {
     const [lis_todos, setListTodos] = useState([]);
@@ -15,10 +16,9 @@ const TodoList = () => {
     }
 
     return(
-        <article>
-            <section style={{border: "1px solid black",}}>
+        <article className={styles[`content-box`]}>
+            <section className={styles[`content-box__todo-list`]}>
                 <h1>Todo List</h1>
-                <hr />
                 <ShowList showlist={lis_todos} />
                 <CreateList getData={todo_func} nextId={nextId}/>
             </section>  

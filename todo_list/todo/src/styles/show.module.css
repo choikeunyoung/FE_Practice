@@ -1,0 +1,32 @@
+li {
+    list-style: none;
+}
+
+.show-list {
+    margin: 1rem;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.show-list__items {
+    width: 80%;
+}
+
+.show-list__items:hover {
+    cursor: pointer;
+}
+
+.show-list__imagebox {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.show-list__imagebox > img {
+    width: 30px;
+}
+
+.show-list__imagebox > img:hover {
+    cursor: pointer;
+}
