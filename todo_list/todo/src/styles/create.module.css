@@ -10,18 +10,19 @@
     position: relative;
 }
 
-.create-box__forms > input {
+.create-box__forms>input {
     width: 80%;
     padding: .5rem;
     border: 1px solid rgba(0, 0, 0, 0.068);
     border-radius: .5rem;
+    font-size: 1.5rem;
 }
 
-.create-box__forms > input:focus {
+.create-box__forms>input:focus {
     outline: none;
 }
 
-.create-box__forms > button {
+.create-box__forms>button {
     width: 10%;
     height: 2rem;
     border: none;
@@ -32,6 +33,6 @@
     transform: translateY(50%);
 }
 
-.create-box__forms > button:hover {
+.create-box__forms>button:hover {
     cursor: pointer;
 }
