@@ -9,10 +9,10 @@ const ShowList = (probs) => {
     const listitems = list_num.map((nums) => 
         <div className={styles[`show-list`]}>
             <span>{ nums.id }.</span>
-            <li key={nums.id} className={styles[`show-list__items`]}>{nums.todo}</li>
+            <li key={nums.id} className={styles[`show-list__items`]} id=nums.id}">{nums.todo}</li>
             <div className={styles[`show-list__imagebox`]}>
-                <img src={edit} alt=""/>
-                <img src={Delete} alt=""/>
+                <img src={edit} value={nums.id} alt=""/>
+                <img src={Delete} value={nums.id} alt=""/>
             </div>
         </div>
         )
