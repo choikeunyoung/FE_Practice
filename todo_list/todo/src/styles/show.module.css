@@ -11,6 +11,8 @@ li {
 
 .show-list__items {
     width: 80%;
+    list-style: decimal;
+    font-size: 1.5rem;
 }
 
 .show-list__items:hover {
@@ -21,6 +23,11 @@ li {
     width: 15%;
     display: flex;
     justify-content: space-between;
+}
+
+.show-list__active {
+    text-decoration: line-through;
+    color: gray;
 }
 
 .show-list__imagebox > img {
