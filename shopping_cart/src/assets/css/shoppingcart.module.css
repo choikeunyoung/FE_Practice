@@ -1,0 +1,41 @@
+.basePage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basePage__card {
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.basePage__card__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    width: 500px;
+}
+
+.basePage__card__block {
+    width: 100%;
+    height: 80px;
+}
+
+.shoppingcart {
+    width: 600px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.shoppingcart::-webkit-scrollbar {
+    display: none;
+}
