@@ -48,5 +48,7 @@
         console.log(sceneInfo)
     }
 
+    window.addEventListener('resize', setLayout);
+
     setLayout()
 })()
